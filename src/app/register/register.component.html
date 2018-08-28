@@ -1,0 +1,122 @@
+<div class="container">
+  <div class="row centered-form">
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h1 class="panel-title">Register Now</h1>
+        </div>
+        <div class="panel-body">
+          <form [formGroup]="userform" (ngSubmit)="saveUser(userform)">
+            <div class="row">
+              <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="form-group">
+                  <input type="text" formControlName="firstName" class="form-control" placeholder="First Name">
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="form-group">
+                  <input type="text" formControlName="lastName" class="form-control " placeholder="Last Name">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                  <input type="email" formControlName="email" class="form-control " placeholder="Email Address">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 col-sm-6 col-md-6" id='datetimepicker'>
+                <div class="form-group">
+                  <input type='date' formControlName="dob" class="form-control " placeholder="Date of Birth" />
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="form-group">
+                  <label class="radio-inline">
+                    <input type="radio" formControlName="gender" value="male">Male</label>
+                  <label class="radio-inline">
+                    <input type="radio" formControlName="gender" value="female">Female</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="form-group">
+                  <input type="text" formControlName="city" class="form-control " placeholder="Your City">
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="form-group">
+                  <select formControlName="country" class="form-control" placeholder="Country">
+                    <option value="">Your Country</option>
+                    <option value="91">(+91) India</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="form-group">
+                  <div class="floatlabel-wrapper" style="position:relative">
+                    <label for="cityId" class="label-floatlabel  " style="position: absolute; top: 20px; left: 12px; display: none; opacity: 0; transition: all 0.3s ease-in-out;">>Expertise</label>
+                    <select formControlName="expArea" class="form-control" placeholder="Area of Experience">
+                      <option value="">Expertise</option>
+                      <option value="IT Technology">IT Technology</option>
+                      <option value="IT Management">IT Management</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="form-group">
+                  <select formControlName="totalExp" class="form-control" placeholder="Total Experience">
+                    <option value="">Experience</option>
+                    <option value="3-5">3-5</option>
+                    <option value="5-7">5-7</option>
+                    <option value="7-10">7-10</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="form-group">
+                  <input type="text" formControlName="mobile" class="form-control " placeholder="Mobile">
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="form-group">
+                  <label class="btn btn-primary btn-file">
+                    Attach Resume
+                    <input type="file" name="file" style="display: none;">
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group well">
+              <p id="tncId">The prize 'lunch on us' may be awarded to the eligible winner(s) are not transferable, redeemable for cash
+                or exchangeable. Prizes may be date specific and will be available on the dates notified one week in advance.</p>
+            </div>
+            <div class="form-group">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" formControlName="agreement">I agree to the terms</label>
+              </div>
+            </div>
+            <input type="submit" value="Register" class="btn btn-info btn-block btn-lg">
+            <!--span class="label">
+              <p Style="margin-bottom:-20px;">Copyright (c)
+                <a href="http://Rahul.com/" target="_blank">
+                  Rahul Solutions Pvt. Ltd </a>
+              </p>
+            </span-->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

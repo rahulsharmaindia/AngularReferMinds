@@ -1,0 +1,32 @@
+
+  
+  .centered-form{
+    margin-top: 60px;
+}
+
+.centered-form .panel{
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+
+label.label-floatlabel {
+    font-weight: bold;
+    color: #0c5fa9;
+    font-size: 13px;
+    
+}
+
+.form-group {
+    margin-bottom: 20px !important;
+    margin-top: 10px !important;
+    
+}
+.btn-group {
+    margin-bottom: 20px !important;
+    margin-top: 10px !important;
+    
+}
+input[type='date'] {
+    margin-bottom: 20px;
+    margin-top: 10px !important;
+}
