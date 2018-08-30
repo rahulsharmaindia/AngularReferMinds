@@ -17,6 +17,7 @@ import { SignupComponent } from './signup/signup.component';
 
 import { SignupService } from './signup/signup.service';
 import { AppRoutingModule } from './/app-routing.module';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { AppRoutingModule } from './/app-routing.module';
     HowitworksComponent,
     ContactusComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
